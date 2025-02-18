@@ -1,0 +1,17 @@
+html {
+	--primary-a: hsl(213, 96%, 18%);
+	--primary-b: hsl(243, 100%, 62%);
+	--primary-c: hsl(228, 100%, 84%);
+	--primary-d: hsl(206, 94%, 87%);
+	--primary-e: hsl(354, 84%, 57%);
+	--neutral-a: hsl(231, 11%, 63%);
+	--neutral-b: hsl(229, 24%, 87%);
+	--neutral-c: hsl(217, 100%, 97%);
+	--neutral-d: hsl(231, 100%, 99%);
+	--neutral-e: hsl(0, 0%, 100%);
+}
+
+body {
+	fnt-size: 16px;
+	font-family: Ubuntu, sans-serif;
+}
