@@ -14,4 +14,69 @@ html {
 body {
 	fnt-size: 16px;
 	font-family: Ubuntu, sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid blue;
+	height: 100vh;
+	margin: 0;
+}
+
+/* LAYOUT */
+
+.container {
+	background: blanchedalmond;
+	width: 100vw;
+	height: 100dvh;
+}
+
+@media(min-width: 768px) {
+	.container {
+		width: 940px;
+		height: 600px;
+		padding: 15px;
+		max-width: 100vw;
+		max-height: 100vh;
+		margin: auto;
+		display: flex;
+		align-items: stretch;
+		border-radius: 15px;
+	}
+}
+
+nav {
+	background: var(--primary-b);
+	height: 172px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
+@media(min-width: 768px) {
+	nav {
+		position: relative;
+		width: 247px;
+		height: auto;
+		border-radius: 10px;
+	}
+}
+
+.form__wrapper {
+	position: absolute;
+	top: 110px;
+	right: 15px;
+	left: 15px;
+	border-radius: 10px;
+	z-index: 100;
+	background: bisque;
+}
+
+@media(min-width: 768px) {
+	.form__wrapper {
+		position: relative;
+		top: auto;
+		right: auto;
+		left: auto;
+	}
 }
