@@ -36,6 +36,7 @@ form {
 		@media(min-width: 768px) {
 			height: 48px;
 			margin-bottom: 22px;
+			border-radius: 8px;
 		}
 
 	}
