@@ -1,0 +1,49 @@
+h1 {
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.content__instruction {
+	font-size: 14px;
+	color: var(--neutral-a);
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+
+	input {
+		border: 1px solid var(--neutral-a);
+	}
+
+	input[type=text],
+	input[type=email] {
+		height: 40px;
+		padding: 0 15px;
+		margin-bottom: 15px;
+		border-radius: 5px;
+	}
+}
+
+.content__button-wrapper {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	height: 72px;
+	background: var(--neutral-e);
+	.button-back {
+		visibility: hidden;
+	}
+}
+
+@media(min-width: 768px) {
+	.content__button-wrapper {
+		position: relative;
+		height: auto;
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		background: none;
+	}
+}
