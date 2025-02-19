@@ -153,5 +153,3 @@ input:checked + .slider:before {
 	content: url('../images/icon-checkmark.svg');
 	padding-left: 4px;
 }
-
-

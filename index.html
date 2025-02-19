@@ -10,6 +10,9 @@
 	<link rel="stylesheet" href="./assets/styles/layout.css">
 	<link rel="stylesheet" href="./assets/styles/sidebar.css">
 	<link rel="stylesheet" href="./assets/styles/form-elements.css">
+	<link rel="stylesheet" href="./assets/styles/form-elements.css">
+
+
 
   <title>Frontend Mentor | Multi-step form</title>
 
@@ -51,95 +54,101 @@
 
 	<div class="content__wrapper">
 		<!-- Step 1 start -->
-		<!---h1>Personal info</h1>
-		<p class="content__instruction">Please provide your name, email address, and phone number.</p>
-		<form>
-			<Label for="name" class="simple-label">Name</Label>
-			<input id="name" type="text" placeholder="e.g. Lavendel Magnolia Blue"></input>
-			<label for="email" class="simple-label">Email Address</label>
-			<input id="email" type="email" placeholder="e.g. lavendel@nice.org"></input>
-			<label for="phone" class="simple-label">Phone Number</label>
-			<input type="text" placeholder="e.g. +1 234 567 890" id="phone"></input>
-		</form>
-		<div class="content__button-wrapper">
-			<button class="button-back">Go Back</button>
-			<button class="button-next">Next Step</button>
-		</div--->
+		<section class="content__enter-data" data-sheet="1">
+			<h1>Personal info</h1>
+			<p class="content__instruction">Please provide your name, email address, and phone number.</p>
+			<form>
+				<Label for="name" class="simple-label">Name</Label>
+				<input id="name" type="text" placeholder="e.g. Lavendel Magnolia Blue"></input>
+				<label for="email" class="simple-label">Email Address</label>
+				<input id="email" type="email" placeholder="e.g. lavendel@nice.org"></input>
+				<label for="phone" class="simple-label">Phone Number</label>
+				<input type="text" placeholder="e.g. +1 234 567 890" id="phone"></input>
+			</form>
+			<div class="content__button-wrapper">
+				<button class="button-back">Go Back</button>
+				<button class="button-next">Next Step</button>
+			</div>
+		</section>
 		<!-- Step 1 end -->
 
 		<!-- Step 2 start -->
-		<!---h1>Select your plan</h1>
-		<p class="content__instruction">You have the option of monthly or yearly billing.</p>
-		<form>
-			<div class="content__choose-plan">
-				<Label class="radio-label">
-					<input type="radio" name="plan" value="arcade" checked></input>
-					<img src="../assets/images/icon-arcade.svg" alt="Arcade Plan">
-					<span class="label-title">Arcade</span>
-					<span class="label-description">$9/mo</span>
-					<span class="label-attribute">2 months free</span>
-				</Label>
-				<Label class="radio-label">
-					<input type="radio" name="plan" value="arcade"></input>
-					<img src="../assets/images/icon-advanced.svg" alt="Advanced Plan">
-					<span class="label-title">Advanced</span>
-					<span class="label-description">$12/mo</span>
-					<span class="label-attribute">2 months free</span>
-				</Label>
-				<Label class="radio-label">
-					<input type="radio" name="plan" value="arcade"></input>
-					<img src="../assets/images/icon-pro.svg" alt="Pro Plan">
-					<span class="label-title">Pro</span>
-					<span class="label-description">$15/mo</span>
-					<span class="label-attribute">2 months free</span>
-				</Label>
+		<section class="content__plan-section active-section" data-sheet="2">
+			<h1>Select your plan</h1>
+			<p class="content__instruction">You have the option of monthly or yearly billing.</p>
+			<form>
+				<div class="content__choose-plan">
+					<Label class="radio-label">
+						<input type="radio" name="plan" value="arcade" checked></input>
+						<img src="../assets/images/icon-arcade.svg" alt="Arcade Plan">
+						<span class="label-title">Arcade</span>
+						<span class="label-description">$9/mo</span>
+						<span class="label-attribute">2 months free</span>
+					</Label>
+					<Label class="radio-label">
+						<input type="radio" name="plan" value="arcade"></input>
+						<img src="../assets/images/icon-advanced.svg" alt="Advanced Plan">
+						<span class="label-title">Advanced</span>
+						<span class="label-description">$12/mo</span>
+						<span class="label-attribute">2 months free</span>
+					</Label>
+					<Label class="radio-label">
+						<input type="radio" name="plan" value="arcade"></input>
+						<img src="../assets/images/icon-pro.svg" alt="Pro Plan">
+						<span class="label-title">Pro</span>
+						<span class="label-description">$15/mo</span>
+						<span class="label-attribute">2 months free</span>
+					</Label>
+				</div>
+				<div class="content__switch-interval">
+					<span class="--active">Monthly</span>
+					<label class="switch">
+						<input type="checkbox">
+						<span class="slider"></span>
+					</label>
+					<span>Yearly</span>
+				</div>
+			</form>
+			<div class="content__button-wrapper" data-sheet="3">
+				<button class="button-back">Go Back</button>
+				<button class="button-next">Next Step</button>
 			</div>
-			<div class="content__switch-interval">
-				<span class="--active">Monthly</span>
-				<label class="switch">
-					<input type="checkbox">
-					<span class="slider"></span>
-				</label>
-				<span>Yearly</span>
-			</div>
-		</form>
-		<div class="content__button-wrapper">
-			<button class="button-back">Go Back</button>
-			<button class="button-next">Next Step</button>
-		</div--->
+		</section>
 		<!-- Step 2 end -->
 
 
 		<!-- Step 3 start -->
+		<section class="content_extras-section">
 
-		<h1>Pick add-ons</h1>
-		<p class="content__instruction">Add-ons help enhance your gaming experience.</p>
-		<form>
-			<div class="content__choose-extras">
-				<Label class="checkbox-label">
-					<input type="checkbox" checked>
-					<span class="label-title">Online service</span>
-					<span class="label-description">Access to multiplayer games</span>
-					<span class="label-additional">+$1/mo</span>
-				</Label>
-				<Label class="checkbox-label">
-					<input type="checkbox">
-					<span class="label-title">Larger storage</span>
-					<span class="label-description">Extra 1TB of cloud save</span>
-					<span class="label-additional">+$2/mo</span>
-				</Label>
-				<Label class="checkbox-label">
-					<input type="checkbox">
-					<span class="label-title">Customizable Profile</span>
-					<span class="label-description">Custom theme on your profile</span>
-					<span class="label-additional">+$2/mo</span>
-				</Label>
+			<h1>Pick add-ons</h1>
+			<p class="content__instruction">Add-ons help enhance your gaming experience.</p>
+			<form>
+				<div class="content__choose-extras">
+					<Label class="checkbox-label">
+						<input type="checkbox" checked>
+						<span class="label-title">Online service</span>
+						<span class="label-description">Access to multiplayer games</span>
+						<span class="label-additional">+$1/mo</span>
+					</Label>
+					<Label class="checkbox-label">
+						<input type="checkbox">
+						<span class="label-title">Larger storage</span>
+						<span class="label-description">Extra 1TB of cloud save</span>
+						<span class="label-additional">+$2/mo</span>
+					</Label>
+					<Label class="checkbox-label">
+						<input type="checkbox">
+						<span class="label-title">Customizable Profile</span>
+						<span class="label-description">Custom theme on your profile</span>
+						<span class="label-additional">+$2/mo</span>
+					</Label>
+				</div>
+			</form>
+			<div class="content__button-wrapper">
+				<button class="button-back">Go Back</button>
+				<button class="button-next">Next Step</button>
 			</div>
-		</form>
-		<div class="content__button-wrapper">
-			<button class="button-back">Go Back</button>
-			<button class="button-next">Next Step</button>
-		</div>
+		</section>
 
 		  <!-- Step 3 end -->
 		  <!-- Step 4 start -->
@@ -175,3 +184,4 @@
 </div>
 </body>
 </html>
+<script src="./assets/js/switch.js"></script>
