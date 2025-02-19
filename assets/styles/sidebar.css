@@ -7,10 +7,31 @@ ol {
 	margin-top: 30px;
 	list-style-type: none;
 	counter-reset: ordered-list;
+	@media(min-width: 768px) {
+		flex-direction: column;
+		gap: 30px;
+		margin-top: 38px;
+		margin-left: 82px;
+	}
 
 	li {
+		position: relative;
 		span {
 			display: none;
+			@media(min-width: 768px) {
+				display: flex;
+				text-transform: uppercase;
+			}
+		}
+		.sidebar__step-indicator {
+			font-size: 12px;
+			margin-bottom: 2px;
+			color: var(--primary-c);
+		}
+		.sidebar__step-name {
+			font-size: 14px;
+			font-weight: 500;
+			color: var(--neutral-e);
 		}
 	}
 
@@ -28,6 +49,10 @@ ol li::before {
 	border-radius: 50%;
 	font-size: 14px;
 	font-weight: 500;
+	@media(min-width: 768px) {
+		position: absolute;
+		left: -50px;
+	}
 }
 
 ol li.--active::before {
