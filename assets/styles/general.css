@@ -9,10 +9,10 @@ html {
 	--neutral-c: hsl(217, 100%, 97%);
 	--neutral-d: hsl(231, 100%, 99%);
 	--neutral-e: hsl(0, 0%, 100%);
-
+}
+* {
 	box-sizing: border-box;
 }
-
 :before, *:after {
 	box-sizing: border-box;
 }
@@ -70,23 +70,23 @@ nav {
 
 .content__wrapper {
 	position: absolute;
-	top: 110px;
-	right: 15px;
-	left: 15px;
+	top: 100px;
+	right: 16px;
+	left: 16px;
 	border-radius: 10px;
 	z-index: 100;
 	background: var(--neutral-e);
-	padding: 12px;
+	padding: 16px 24px;
 	flex-grow: 1;
-}
-
-@media(min-width: 768px) {
-	.content__wrapper {
+	@media (min-width: 768px) {
 		position: relative;
 		top: auto;
 		right: auto;
 		left: auto;
-		margin: 0 80px;
-		padding: 20px 0;
+		padding: 30px calc(11% - 16px) 20px 11%;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
 	}
 }
+
