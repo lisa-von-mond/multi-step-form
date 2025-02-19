@@ -77,7 +77,6 @@ h1 {
 }
 
 /* LAYOUT PAYMENT INTERVAL TOGGLE SWITCH */
-
 .content__switch-interval {
 	height: 48px;
 	width: 100%;
@@ -96,6 +95,52 @@ h1 {
 		color: var(--neutral-a);
 	}
 }
+
+/* OVERVIEW */
+.overview__box {
+	background: var(--neutral-c);
+	margin-bottom: 20px;
+}
+.overview__box, .overview__total{
+	font-size: 14px;
+	padding: 12px;
+}
+.overview__plan, .overview__extras, .overview__total {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.overview__plan {
+	div {
+		display: flex;
+		flex-direction: column;
+	}
+	span {
+		font-weight: 500;
+	}
+	a {
+		color: var(--neutral-a);
+		margin-top: 4px;
+	}
+}
+.overview__extras {
+	margin-top: 12px;
+	span:nth-child(2) {
+		color: var(--neutral-a);
+	}
+}
+hr {
+	margin: 12px 0 0 0;
+	border: 1px solid var(--neutral-a);
+}
+
+.overview__total {
+	span:nth-child(2) {
+		color: var(--primary-b);
+		font-weight: 500;
+	}
+}
+
 
 /* BUTTON SECTION */
 

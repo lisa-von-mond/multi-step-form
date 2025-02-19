@@ -54,7 +54,7 @@
 
 	<div class="content__wrapper">
 		<!-- Step 1 start -->
-		<section class="content__enter-data" data-sheet="1">
+		<section class="enter-data">
 			<h1>Personal info</h1>
 			<p class="content__instruction">Please provide your name, email address, and phone number.</p>
 			<form>
@@ -73,7 +73,7 @@
 		<!-- Step 1 end -->
 
 		<!-- Step 2 start -->
-		<section class="content__plan-section active-section" data-sheet="2">
+		<section class="choose-plan" data-sheet="2">
 			<h1>Select your plan</h1>
 			<p class="content__instruction">You have the option of monthly or yearly billing.</p>
 			<form>
@@ -118,7 +118,7 @@
 
 
 		<!-- Step 3 start -->
-		<section class="content_extras-section">
+		<section class="choose-extras">
 
 			<h1>Pick add-ons</h1>
 			<p class="content__instruction">Add-ons help enhance your gaming experience.</p>
@@ -149,20 +149,42 @@
 				<button class="button-next">Next Step</button>
 			</div>
 		</section>
+		<!-- Step 3 end -->
 
-		  <!-- Step 3 end -->
-		  <!-- Step 4 start -->
-		<!---h1>Finishing up</h1>
-		<p>Double-check everything looks OK before confirming.</p--->
+
+		<!-- Step 4 start -->
+
+		<section class="overview active-section">
+		<h1>Finishing up</h1>
+		<p class="content__instruction">Double-check everything looks OK before confirming.</p>
 		<!-- Dynamically add subscription and add-on selections here -->
-		<!---div>
-			Total (per month/year)
+			<div class="overview__box">
+				<div class="overview__plan">
+					<div>
+						<span>Plan goes here</span>
+						<a href="">change</a>
+					</div>
+					<span>+$10/yr</span>
+				</div>
+				<hr>
+				<div class="overview__extras">
+					<span>Extra</span>
+					<span>+$10/yr</span>
+				</div>
+				<div class="overview__extras">
+					<span>Extra</span>
+					<span>+$10/yr</span>
+				</div>
+			</div>
+			<div class="overview__total">
+				<span>Total (per month/year)</span>
+				<span>Price</span>
+			</div>
 
 		<div class="content__button-wrapper">
 			<button class="button-back">Go Back</button>
 			<button class="button-next">Confirm</button>
 		</div>
-		</div--->
 		  <!-- Step 4 end -->
 
 		  <!-- Step 5 start -->
