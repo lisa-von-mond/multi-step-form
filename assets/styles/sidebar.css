@@ -1,0 +1,37 @@
+ol {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	gap: 18px;
+	padding: 0;
+	margin-top: 30px;
+	list-style-type: none;
+	counter-reset: ordered-list;
+
+	li {
+		span {
+			display: none;
+		}
+	}
+
+}
+ol li::before {
+	content: counter(ordered-list);
+	counter-increment: ordered-list;
+	height: 33px;
+	width: 33px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid var(--neutral-e);
+	color: var(--neutral-e);
+	border-radius: 50%;
+	font-size: 14px;
+	font-weight: 500;
+}
+
+ol li.--active::before {
+	background: var(--primary-c);
+	border: none;
+	color: var(--primary-a);
+}
