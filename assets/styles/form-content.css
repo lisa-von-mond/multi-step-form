@@ -55,6 +55,9 @@ h1 {
 	.label-attribute {
 		font-size: 12px;
 	}
+	.label-attribute.--inactive {
+		display: none;
+	}
 	.label-additional {
 		font-size: 12px;
 		color: var(--primary-b);
@@ -83,11 +86,11 @@ h1 {
 	align-items: center;
 	justify-content: center;
 	gap: 20px;
-	span {
+	.indicator {
 		font-size: 16px;
 		font-weight: 500;
 	}
-	span.--active {
+	.indicator.--inactive {
 		font-size: 16px;
 		font-weight: 500;
 		color: var(--neutral-a);
