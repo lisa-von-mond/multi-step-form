@@ -18,46 +18,56 @@ h1 {
 	}
 }
 
-form {
+/* LAYOUT CHOOSE PLAN SECTION */
+
+.content__choose-plan {
 	display: flex;
+	margin-top: 4px;
 	flex-direction: column;
-
-	input {
-		border: 1px solid var(--neutral-a);
+	gap: 12px;
+	margin-bottom: 16px;
+	@media(min-width: 768px) {
+		flex-direction: row;
+		gap: 16px;
+		margin-bottom: 32px;
 	}
-
-	input[type=text],
-	input[type=email] {
-		height: 40px;
-		padding: 0 15px;
-		margin-bottom: 14px;
-		border-radius: 4px;
+	.plan-desctription {
 		font-size: 16px;
-		@media(min-width: 768px) {
-			height: 48px;
-			margin-bottom: 22px;
-			border-radius: 8px;
-		}
-
-	}
-	input[type=text]::placeholder,
-	input[type=email]::placeholder {
-		font-size: 15px;
-		color: 	var(--neutral-a);
 		font-weight: 500;
-		@media(min-width: 768px) {
-			font-size: 16px;
-		}
-	}
-	.simple-label {
-		font-size: 12px;
 		margin-bottom: 4px;
-		@media(min-width: 768px) {
-			font-size: 14px;
-			margin-bottom: 8px;
-		}
+	}
+	.plan-price {
+		font-size: 14px;
+		color: var(--neutral-a);
+		margin-bottom: 4px;
+	}
+	.plan-months-benefit {
+		font-size: 12px;
 	}
 }
+
+/* LAYOUT PAYMENT INTERVAL TOGGLE SWITCH */
+
+.content__switch-interval {
+	height: 48px;
+	width: 100%;
+	background: var(--neutral-c);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+	span {
+		font-size: 16px;
+		font-weight: 500;
+	}
+	span.--active {
+		font-size: 16px;
+		font-weight: 500;
+		color: var(--neutral-a);
+	}
+}
+
+/* BUTTON SECTION */
 
 .content__button-wrapper {
 	position: fixed;

@@ -1,0 +1,124 @@
+form {
+	display: flex;
+	flex-direction: column;
+}
+
+input[type=text],
+input[type=email] {
+	border: 1px solid var(--neutral-a);
+	height: 40px;
+	padding: 0 15px;
+	margin-bottom: 14px;
+	border-radius: 4px;
+	font-size: 16px;
+	@media(min-width: 768px) {
+		height: 48px;
+		margin-bottom: 22px;
+		border-radius: 8px;
+	}
+}
+
+input[type=text]::placeholder,
+input[type=email]::placeholder {
+	font-size: 15px;
+	color: 	var(--neutral-a);
+	font-weight: 500;
+	@media(min-width: 768px) {
+		font-size: 16px;
+	}
+}
+.simple-label {
+	font-size: 12px;
+	margin-bottom: 4px;
+	@media(min-width: 768px) {
+		font-size: 14px;
+		margin-bottom: 8px;
+	}
+}
+
+/* RADIO INPUTS - CHOOSE PLAN */
+
+.radio-label {
+	border: 1px solid grey;
+	min-height: 77px;
+	border-radius: 8px;
+	padding: 13px;
+	padding-left: 70px;
+	position: relative;
+	flex: 1;
+	cursor: pointer;
+	display: flex;
+	flex-direction: column;
+	@media(min-width: 768px) {
+		height: 160px;
+		padding: 14px;
+		justify-content: end;
+	}
+	img {
+		position: absolute;
+		top: 15px;
+		left: 15px;
+	}
+	input {
+		opacity: 0;
+		width: 0;
+		height: 0;
+	}
+	span {
+		display: block;
+	}
+}
+.radio-label:hover {
+		border: 1px solid var(--primary-b);
+}
+
+.radio-label:has(input:checked) {
+	border: 1px solid var(--primary-b);
+	background: var(--neutral-c);
+}
+
+/* TOGGLE SWITCH - PAYMENT INTERVAL*/
+
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 38px;
+	height: 20px;
+	input {
+		opacity: 0;
+		width: 0;
+		height: 0;
+	}
+}
+
+.slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: var(--primary-a);
+	-webkit-transition: .4s;
+	transition: .4s;
+	border-radius: 10px;
+}
+
+.slider:before {
+	position: absolute;
+	content: "";
+	height: 12px;
+	width: 12px;
+	left: 4px;
+	bottom: 4px;
+	background-color: white;
+	-webkit-transition: .4s;
+	transition: .4s;
+	border-radius: 50%;
+}
+
+input:checked + .slider:before {
+	-webkit-transform: translateX(18px);
+	-ms-transform: translateX(18px);
+	transform: translateX(18px);
+}
