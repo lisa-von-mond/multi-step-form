@@ -55,7 +55,7 @@ ol li::before {
 	}
 }
 
-ol li.--active::before {
+ol li.active-section::before {
 	background: var(--primary-c);
 	border: none;
 	color: var(--primary-a);

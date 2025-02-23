@@ -32,7 +32,7 @@
   <!-- Sidebar start -->
 	<nav class="sidebar">
 		<ol>
-			<li>
+			<li class="active-section">
 				<span class="sidebar__step-indicator">Step 1</span>
 				<span class="sidebar__step-name">Your info</span>
 			</li>
@@ -44,7 +44,7 @@
 				<span class="sidebar__step-indicator">Step 3</span>
 				<span class="sidebar__step-name">Add-ons</span>
 			</li>
-			<li class="--active">
+			<li>
 				  <span class="sidebar__step-indicator">Step 4</span>
 				  <span class="sidebar__step-name">Summary</span>
 			</li>
@@ -54,7 +54,7 @@
 
 	<div class="content__wrapper">
 		<!-- Step 1 start -->
-		<section class="enter-data">
+		<section class="enter-data active-section">
 			<h1>Personal info</h1>
 			<p class="content__instruction">Please provide your name, email address, and phone number.</p>
 			<form>
@@ -154,49 +154,49 @@
 
 		<!-- Step 4 start -->
 
-		<section class="overview active-section">
-		<h1>Finishing up</h1>
-		<p class="content__instruction">Double-check everything looks OK before confirming.</p>
-		<!-- Dynamically add subscription and add-on selections here -->
-			<div class="overview__box">
-				<div class="overview__plan">
-					<div>
-						<span>Plan goes here</span>
-						<a href="">change</a>
+		<section class="overview">
+			<h1>Finishing up</h1>
+			<p class="content__instruction">Double-check everything looks OK before confirming.</p>
+			<!-- Dynamically add subscription and add-on selections here -->
+				<div class="overview__box">
+					<div class="overview__plan">
+						<div>
+							<span>Plan goes here</span>
+							<a href="">change</a>
+						</div>
+						<span>+$10/yr</span>
 					</div>
-					<span>+$10/yr</span>
+					<hr>
+					<div class="overview__extras">
+						<span>Extra</span>
+						<span>+$10/yr</span>
+					</div>
+					<div class="overview__extras">
+						<span>Extra</span>
+						<span>+$10/yr</span>
+					</div>
 				</div>
-				<hr>
-				<div class="overview__extras">
-					<span>Extra</span>
-					<span>+$10/yr</span>
+				<div class="overview__total">
+					<span>Total (per month/year)</span>
+					<span>Price</span>
 				</div>
-				<div class="overview__extras">
-					<span>Extra</span>
-					<span>+$10/yr</span>
+				<div class="content__button-wrapper">
+					<button class="button-back">Go Back</button>
+					<button class="button-next">Confirm</button>
 				</div>
-			</div>
-			<div class="overview__total">
-				<span>Total (per month/year)</span>
-				<span>Price</span>
-			</div>
+		</section>
+		<!-- Step 4 end -->
 
-		<div class="content__button-wrapper">
-			<button class="button-back">Go Back</button>
-			<button class="button-next">Confirm</button>
-		</div>
-		  <!-- Step 4 end -->
+		<!-- Step 5 start -->
+		<section class="summary">
+			<h1>Thank you!</h1>
 
-		  <!-- Step 5 start -->
-
-		  <!---h1>Thank you!</h1>
-
-		  <p>Thanks for confirming your subscription! We hope you have fun
-		  using our platform. If you ever need support, please feel free
-		  to email us at support@loremgaming.com.</p--->
+			  <p>Thanks for confirming your subscription! We hope you have fun
+			  using our platform. If you ever need support, please feel free
+			  to email us at support@loremgaming.com.</p>
+		</section>
 		<!-- Step 5 end -->
 	</div>
-
 
 
   <!---div class="attribution">
