@@ -76,24 +76,24 @@
 		<section class="choose-plan" data-sheet="2">
 			<h1>Select your plan</h1>
 			<p class="content__instruction">You have the option of monthly or yearly billing.</p>
-			<form>
-				<div class="content__choose-plan">
-					<Label class="radio-label">
-						<input type="radio" name="plan" value="arcade" checked></input>
+			<form class="choose-plan__form">
+				<div class="choose-plan__upper-form">
+					<Label class="radio-label" for="plan_arcade">
+						<input type="radio" name="choose-plan" value="Arcade" id="plan_arcade" checked>
 						<img src="../assets/images/icon-arcade.svg" alt="Arcade Plan">
 						<span class="label-title">Arcade</span>
 						<span class="label-description">$9/mo</span>
 						<span class="label-attribute --inactive">2 months free</span>
 					</Label>
-					<Label class="radio-label">
-						<input type="radio" name="plan" value="arcade"></input>
+					<Label class="radio-label" for="plan_advanced">
+						<input type="radio" name="choose-plan" value="Advanced" id="plan_advanced" data-price="$12/mo">
 						<img src="../assets/images/icon-advanced.svg" alt="Advanced Plan">
 						<span class="label-title">Advanced</span>
 						<span class="label-description">$12/mo</span>
 						<span class="label-attribute --inactive">2 months free</span>
 					</Label>
-					<Label class="radio-label">
-						<input type="radio" name="plan" value="arcade"></input>
+					<Label class="radio-label" for="plan_pro">
+						<input type="radio" name="choose-plan" value="Pro" id="plan_pro" data-price="$15/mo">
 						<img src="../assets/images/icon-pro.svg" alt="Pro Plan">
 						<span class="label-title">Pro</span>
 						<span class="label-description">$15/mo</span>
@@ -102,8 +102,8 @@
 				</div>
 				<div class="content__switch-interval">
 					<span class="indicator">Monthly</span>
-					<label class="switch">
-						<input type="checkbox">
+					<label class="switch" for="interval">
+						<input type="checkbox" id="interval">
 						<span class="slider"></span>
 					</label>
 					<span class="indicator --inactive">Yearly</span>
@@ -188,7 +188,7 @@
 		<!-- Step 4 end -->
 
 		<!-- Step 5 start -->
-		<section class="summary">
+		<section class="thank you">
 			<h1>Thank you!</h1>
 
 			  <p>Thanks for confirming your subscription! We hope you have fun
@@ -207,3 +207,4 @@
 </body>
 </html>
 <script src="./assets/js/switch.js"></script>
+<script src="./assets/js/summary.js"></script>

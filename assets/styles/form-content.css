@@ -36,7 +36,7 @@ h1 {
 
 /* LAYOUT CHOOSE PLAN SECTION / CHOOSE EXTRAS SECTION */
 
-.content__choose-plan, .content__choose-extras {
+.choose-plan__upper-form, .content__choose-extras {
 	display: flex;
 	margin-top: 4px;
 	flex-direction: column;
@@ -68,7 +68,7 @@ h1 {
 	}
 }
 
-.content__choose-plan {
+.choose-plan__upper-form {
 	@media(min-width: 768px) {
 		flex-direction: row;
 		gap: 16px;

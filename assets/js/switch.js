@@ -39,11 +39,7 @@ const toggleSwitch = document.querySelector('.switch')
 const indicators = document.querySelectorAll('.indicator')
 const labelAttributes = document.querySelectorAll('.label-attribute')
 toggleSwitch.addEventListener('change', () => {
-	console.log(event.target.checked);
 	[...indicators, ...labelAttributes].forEach(el => {
 		el.classList.toggle('--inactive');
 	})
 })
-
-
-
