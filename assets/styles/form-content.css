@@ -36,7 +36,7 @@ h1 {
 
 /* LAYOUT CHOOSE PLAN SECTION / CHOOSE EXTRAS SECTION */
 
-.choose-plan__upper-form, .content__choose-extras {
+.choose-plan__upper-form, .choose-extras__form-content {
 	display: flex;
 	margin-top: 4px;
 	flex-direction: column;
@@ -105,7 +105,7 @@ h1 {
 	font-size: 14px;
 	padding: 12px;
 }
-.overview__plan, .overview__extras, .overview__total {
+.overview__plan, .overview__extra.active, .overview__total {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -123,12 +123,19 @@ h1 {
 		margin-top: 4px;
 	}
 }
-.overview__extras {
-	margin-top: 12px;
-	span:nth-child(2) {
+
+.overview__extra {
+	display: none;
+	span:nth-child(1) {
 		color: var(--neutral-a);
 	}
 }
+
+.overview__extras {
+	margin-top: 12px;
+	flex-direction: column;
+}
+
 hr {
 	margin: 12px 0 0 0;
 	border: 1px solid var(--neutral-a);
@@ -155,7 +162,7 @@ hr {
 	justify-content: space-between;
 	align-items: center;
 	padding: 0 16px;
-	@media(min-width: 768px) {
+	@media (min-width: 768px) {
 		position: relative;
 		height: auto;
 		width: 100%;
@@ -164,38 +171,39 @@ hr {
 		align-items: end;
 		flex-grow: 1;
 	}
-}
 
-button {
-	height: 40px;
-	font-size: 14px;
-	font-weight: 500;
-	cursor: pointer;
-	font-family: inherit;
-	border: none;
-	background: none;
-	@media(min-width: 768px) {
-		height: 48px;
-		font-size: 16px;
+	button {
+		height: 40px;
+		font-size: 14px;
+		font-weight: 500;
+		cursor: pointer;
+		font-family: inherit;
+		border: none;
+		background: none;
+		@media (min-width: 768px) {
+			height: 48px;
+			font-size: 16px;
+		}
+	}
+
+	.button-next {
+		background: var(--primary-a);
+		color: var(--neutral-e);
+		border-radius: 6px;
+		padding: 10px 14px;
+		@media (min-width: 768px) {
+			padding: 12px 24px;
+			border-radius: 8px;
+		}
+	}
+
+	.button-back {
+		color: var(--neutral-a);
+		background: none;
+		padding: 10px 0;
+		@media (min-width: 768px) {
+			padding: 12px 0;
+		}
 	}
 }
 
-.button-next {
-	background: var(--primary-a);
-	color: var(--neutral-e);
-	border-radius: 6px;
-	padding: 10px 14px;
-	@media(min-width: 768px) {
-		padding: 12px 24px;
-		border-radius: 8px;
-	}
-}
-
-.button-back {
-	color: var(--neutral-a);
-	background: none;
-	padding: 10px 0;
-	@media(min-width: 768px) {
-		padding: 12px 0;
-	}
-}

@@ -54,7 +54,7 @@
 
 	<div class="content__wrapper">
 		<!-- Step 1 start -->
-		<section class="enter-data active-section">
+		<section class="enter-data">
 			<h1>Personal info</h1>
 			<p class="content__instruction">Please provide your name, email address, and phone number.</p>
 			<form>
@@ -82,21 +82,21 @@
 						<input type="radio" name="choose-plan" value="Arcade" id="plan_arcade" checked>
 						<img src="../assets/images/icon-arcade.svg" alt="Arcade Plan">
 						<span class="label-title">Arcade</span>
-						<span class="label-description">$9/mo</span>
+						<span class="label-description">$PRICE/INT</span>
 						<span class="label-attribute --inactive">2 months free</span>
 					</Label>
 					<Label class="radio-label" for="plan_advanced">
 						<input type="radio" name="choose-plan" value="Advanced" id="plan_advanced" data-price="$12/mo">
 						<img src="../assets/images/icon-advanced.svg" alt="Advanced Plan">
 						<span class="label-title">Advanced</span>
-						<span class="label-description">$12/mo</span>
+						<span class="label-description">$PRICE/INT</span>
 						<span class="label-attribute --inactive">2 months free</span>
 					</Label>
 					<Label class="radio-label" for="plan_pro">
 						<input type="radio" name="choose-plan" value="Pro" id="plan_pro" data-price="$15/mo">
 						<img src="../assets/images/icon-pro.svg" alt="Pro Plan">
 						<span class="label-title">Pro</span>
-						<span class="label-description">$15/mo</span>
+						<span class="label-description">$PRICE/INT</span>
 						<span class="label-attribute --inactive">2 months free</span>
 					</Label>
 				</div>
@@ -122,25 +122,25 @@
 
 			<h1>Pick add-ons</h1>
 			<p class="content__instruction">Add-ons help enhance your gaming experience.</p>
-			<form>
-				<div class="content__choose-extras">
+			<form class="choose-extras__form">
+				<div class="choose-extras__form-content">
 					<Label class="checkbox-label">
-						<input type="checkbox" checked>
+						<input type="checkbox" value="service">
 						<span class="label-title">Online service</span>
 						<span class="label-description">Access to multiplayer games</span>
-						<span class="label-additional">+$1/mo</span>
+						<span class="label-additional">$PRICE/INT</span>
 					</Label>
 					<Label class="checkbox-label">
-						<input type="checkbox">
+						<input type="checkbox" value="storage">
 						<span class="label-title">Larger storage</span>
 						<span class="label-description">Extra 1TB of cloud save</span>
-						<span class="label-additional">+$2/mo</span>
+						<span class="label-additional">$PRICE/INT</span>
 					</Label>
 					<Label class="checkbox-label">
-						<input type="checkbox">
+						<input type="checkbox" value="profile">
 						<span class="label-title">Customizable Profile</span>
 						<span class="label-description">Custom theme on your profile</span>
-						<span class="label-additional">+$2/mo</span>
+						<span class="label-additional">$PRICE/INT</span>
 					</Label>
 				</div>
 			</form>
@@ -154,7 +154,7 @@
 
 		<!-- Step 4 start -->
 
-		<section class="overview">
+		<section class="overview active-section">
 			<h1>Finishing up</h1>
 			<p class="content__instruction">Double-check everything looks OK before confirming.</p>
 			<!-- Dynamically add subscription and add-on selections here -->
@@ -164,16 +164,22 @@
 							<span>Plan goes here</span>
 							<a href="">change</a>
 						</div>
-						<span>+$10/yr</span>
+						<span>$PRICE/INT</span>
 					</div>
 					<hr>
 					<div class="overview__extras">
-						<span>Extra</span>
-						<span>+$10/yr</span>
-					</div>
-					<div class="overview__extras">
-						<span>Extra</span>
-						<span>+$10/yr</span>
+						<div class="overview__extra" data-extra="service">
+							<span>Online service</span>
+							<span>$PRICE/INT</span>
+						</div>
+						<div class="overview__extra" data-extra="storage">
+							<span>Larger storage</span>
+							<span>$PRICE/INT</span>
+						</div>
+						<div class="overview__extra" data-extra="profile">
+							<span>Customizable Profile</span>
+							<span>$PRICE/INT</span>
+						</div>
 					</div>
 				</div>
 				<div class="overview__total">

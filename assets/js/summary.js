@@ -27,6 +27,7 @@ function fillElements(planName, isYearly, planPrice) {
 	planPriceEl.textContent = planPrice
 }
 
+// fill final summary with right data
 const planForm = document.querySelector('.choose-plan__form')
 planForm.addEventListener('change', () => {
 	const selectedPlan = planForm.querySelector('input[type=radio]:checked').getAttribute('value')
@@ -36,7 +37,17 @@ planForm.addEventListener('change', () => {
 })
 
 
+// change visibility of extras data in final summary
+const extrasFormInput = document.querySelectorAll('.choose-extras__form input')
 
-
-
-
+extrasFormInput.forEach(el => {
+	el.addEventListener('change', () => {
+		const isChecked = el.checked
+		const wrapper = document.querySelector(`[data-extra="${el.getAttribute('value')}"]`);
+		if (isChecked) {
+			wrapper.classList.add('active')
+		} else {
+			wrapper.classList.remove('active')
+		}
+	})
+})
