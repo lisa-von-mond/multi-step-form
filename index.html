@@ -78,25 +78,25 @@
 			<p class="content__instruction">You have the option of monthly or yearly billing.</p>
 			<form class="choose-plan__form">
 				<div class="choose-plan__upper-form">
-					<Label class="radio-label" for="plan_arcade">
+					<Label class="radio-label choose-plan__label" for="plan_arcade" data-slug="arcade">
 						<input type="radio" name="choose-plan" value="Arcade" id="plan_arcade" checked>
 						<img src="../assets/images/icon-arcade.svg" alt="Arcade Plan">
 						<span class="label-title">Arcade</span>
-						<span class="label-description">$PRICE/INT</span>
+						<span class="label-description price-info">$PRICE/INT</span>
 						<span class="label-attribute --inactive">2 months free</span>
 					</Label>
-					<Label class="radio-label" for="plan_advanced">
+					<Label class="radio-label choose-plan__label" for="plan_advanced" data-slug="advanced">
 						<input type="radio" name="choose-plan" value="Advanced" id="plan_advanced" data-price="$12/mo">
 						<img src="../assets/images/icon-advanced.svg" alt="Advanced Plan">
 						<span class="label-title">Advanced</span>
-						<span class="label-description">$PRICE/INT</span>
+						<span class="label-description price-info">$PRICE/INT</span>
 						<span class="label-attribute --inactive">2 months free</span>
 					</Label>
-					<Label class="radio-label" for="plan_pro">
+					<Label class="radio-label choose-plan__label" for="plan_pro" data-slug="pro">
 						<input type="radio" name="choose-plan" value="Pro" id="plan_pro" data-price="$15/mo">
 						<img src="../assets/images/icon-pro.svg" alt="Pro Plan">
 						<span class="label-title">Pro</span>
-						<span class="label-description">$PRICE/INT</span>
+						<span class="label-description price-info">$PRICE/INT</span>
 						<span class="label-attribute --inactive">2 months free</span>
 					</Label>
 				</div>
@@ -124,23 +124,23 @@
 			<p class="content__instruction">Add-ons help enhance your gaming experience.</p>
 			<form class="choose-extras__form">
 				<div class="choose-extras__form-content">
-					<Label class="checkbox-label">
+					<Label class="checkbox-label choose-extras__label" data-slug="service">
 						<input type="checkbox" value="service">
 						<span class="label-title">Online service</span>
 						<span class="label-description">Access to multiplayer games</span>
-						<span class="label-additional">$PRICE/INT</span>
+						<span class="label-additional price-info">$PRICE/INT</span>
 					</Label>
-					<Label class="checkbox-label">
+					<Label class="checkbox-label choose-extras__label" data-slug="storage">
 						<input type="checkbox" value="storage">
 						<span class="label-title">Larger storage</span>
 						<span class="label-description">Extra 1TB of cloud save</span>
-						<span class="label-additional">$PRICE/INT</span>
+						<span class="label-additional price-info">$PRICE/INT</span>
 					</Label>
-					<Label class="checkbox-label">
+					<Label class="checkbox-label choose-extras__label" data-slug="profile">
 						<input type="checkbox" value="profile">
 						<span class="label-title">Customizable Profile</span>
 						<span class="label-description">Custom theme on your profile</span>
-						<span class="label-additional">$PRICE/INT</span>
+						<span class="label-additional price-info">$PRICE/INT</span>
 					</Label>
 				</div>
 			</form>
@@ -164,27 +164,27 @@
 							<span>Plan goes here</span>
 							<a href="">change</a>
 						</div>
-						<span>$PRICE/INT</span>
+						<span class="price-info">$PRICE/INT</span>
 					</div>
 					<hr>
 					<div class="overview__extras">
-						<div class="overview__extra" data-extra="service">
+						<div class="overview__extra" data-slug="service">
 							<span>Online service</span>
-							<span>$PRICE/INT</span>
+							<span class="price-info">$PRICE/INT</span>
 						</div>
-						<div class="overview__extra" data-extra="storage">
+						<div class="overview__extra" data-slug="storage">
 							<span>Larger storage</span>
-							<span>$PRICE/INT</span>
+							<span class="price-info">$PRICE/INT</span>
 						</div>
-						<div class="overview__extra" data-extra="profile">
+						<div class="overview__extra" data-slug="profile">
 							<span>Customizable Profile</span>
-							<span>$PRICE/INT</span>
+							<span class="price-info">$PRICE/INT</span>
 						</div>
 					</div>
 				</div>
 				<div class="overview__total">
 					<span>Total (per month/year)</span>
-					<span>Price</span>
+					<span class="price-info--total">Price</span>
 				</div>
 				<div class="content__button-wrapper">
 					<button class="button-back">Go Back</button>
