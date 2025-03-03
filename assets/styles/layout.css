@@ -16,6 +16,7 @@
 		align-items: stretch;
 		border-radius: 15px;
 		background: var(--neutral-e);
+		box-shadow: 5px 5px 30px rgba(100, 100, 100, 0.1);
 	}
 }
 
@@ -47,12 +48,14 @@ nav {
 	background: var(--neutral-e);
 	padding: 20px 22px;
 	flex-grow: 1;
+	box-shadow: 5px 5px 20px rgba(100, 100, 100, 0.3);
 	@media (min-width: 768px) {
 		position: relative;
 		top: auto;
 		right: auto;
 		left: auto;
 		padding: 30px calc(11% - 16px) 20px 11%;
+		box-shadow: none;
 	}
 }
 

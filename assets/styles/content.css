@@ -223,6 +223,7 @@ hr {
 	justify-content: space-between;
 	align-items: center;
 	padding: 0 16px;
+	box-shadow: -10px 0 20px rgba(100, 100, 100, 0.1);
 	@media (min-width: 768px) {
 		position: relative;
 		height: auto;
