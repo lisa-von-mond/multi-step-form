@@ -20,16 +20,16 @@
 }
 
 nav {
-	background: var(--primary-b);
+	background-image: url("../images/bg-sidebar-mobile.svg");
+	background-size: cover;
 	height: 172px;
 	position: fixed;
 	top: 0;
 	left: 0;
 	right: 0;
-}
-
-@media(min-width: 768px) {
-	nav {
+	@media(min-width: 768px) {
+		background-image: url("../images/bg-sidebar-desktop.svg");
+		background-size: cover;
 		position: relative;
 		min-width: 247px;
 		height: auto;

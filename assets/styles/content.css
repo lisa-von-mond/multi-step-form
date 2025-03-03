@@ -156,11 +156,12 @@ hr {
 	@media(min-width: 768px) {
 		gap: 18px;
 	}
-	.overview__extra {
-		/*	display: none;*/
-		span:nth-child(1) {
-			color: var(--neutral-a);
-		}
+}
+
+.overview__extra {
+	display: none;
+	span:nth-child(1) {
+		color: var(--neutral-a);
 	}
 }
 

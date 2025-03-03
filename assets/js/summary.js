@@ -69,8 +69,8 @@ function fillOverview() {
 	planPriceEl.textContent = writePrice(planPrice, isYearly)
 
 	// change visibility of extras data in final summary
-	const extrasFormInput = document.querySelectorAll('.choose-extras__form input')
-	extrasFormInput.forEach(el => {
+	const extrasFormInputs = document.querySelectorAll('.choose-extras__form input')
+	extrasFormInputs.forEach(el => {
 		const isChecked = el.checked
 		const wrapper = document.querySelector(`[data-slug="${el.getAttribute('value')}"].overview__extra`);
 		const extrasPrice = extrasData.find(x => x.slug === el.getAttribute('value'))[isYearly === true ? 'yearlyPrice' : 'monthlyPrice']
