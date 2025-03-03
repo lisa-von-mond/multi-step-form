@@ -6,7 +6,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
 	<link rel="stylesheet" href="./assets/styles/general.css">
-	<link rel="stylesheet" href="./assets/styles/form-content.css">
+	<link rel="stylesheet" href="./assets/styles/content.css">
 	<link rel="stylesheet" href="./assets/styles/layout.css">
 	<link rel="stylesheet" href="./assets/styles/sidebar.css">
 	<link rel="stylesheet" href="./assets/styles/form-elements.css">
@@ -54,7 +54,7 @@
 
 	<div class="content__wrapper">
 		<!-- Step 1 start -->
-		<section id="enter-data" class="active-section">
+		<section id="enter-data">
 			<h1>Personal info</h1>
 			<p class="content__instruction">Please provide your name, email address, and phone number.</p>
 			<form>
@@ -128,19 +128,19 @@
 						<input type="checkbox" value="service">
 						<span class="label-title">Online service</span>
 						<span class="label-description">Access to multiplayer games</span>
-						<span class="label-additional price-info">$PRICE/INT</span>
+						<span class="label-additional price-info">[$PRICE/INT]</span>
 					</Label>
 					<Label class="checkbox-label choose-extras__label" data-slug="storage">
 						<input type="checkbox" value="storage">
 						<span class="label-title">Larger storage</span>
 						<span class="label-description">Extra 1TB of cloud save</span>
-						<span class="label-additional price-info">$PRICE/INT</span>
+						<span class="label-additional price-info">[$PRICE/INT]</span>
 					</Label>
 					<Label class="checkbox-label choose-extras__label" data-slug="profile">
 						<input type="checkbox" value="profile">
 						<span class="label-title">Customizable Profile</span>
 						<span class="label-description">Custom theme on your profile</span>
-						<span class="label-additional price-info">$PRICE/INT</span>
+						<span class="label-additional price-info">[$PRICE/INT]</span>
 					</Label>
 				</div>
 			</form>
@@ -154,7 +154,7 @@
 
 		<!-- Step 4 start -->
 
-		<section id="overview">
+		<section id="overview" class="active-section">
 			<h1>Finishing up</h1>
 			<p class="content__instruction">Double-check everything looks OK before confirming.</p>
 			<!-- Dynamically add subscription and add-on selections here -->
@@ -162,29 +162,29 @@
 					<div class="overview__plan">
 						<div>
 							<span>Plan goes here</span>
-							<a href="">change</a>
+							<a href="">Change</a>
 						</div>
-						<span class="price-info">$PRICE/INT</span>
+						<span class="price-info">[$PRICE/INT]</span>
 					</div>
 					<hr>
 					<div class="overview__extras">
 						<div class="overview__extra" data-slug="service">
 							<span>Online service</span>
-							<span class="price-info">$PRICE/INT</span>
+							<span class="price-info">[$PRICE/INT]</span>
 						</div>
 						<div class="overview__extra" data-slug="storage">
 							<span>Larger storage</span>
-							<span class="price-info">$PRICE/INT</span>
+							<span class="price-info">[$PRICE/INT]</span>
 						</div>
-						<div class="overview__extra" data-slug="profile">
+						<!---div class="overview__extra" data-slug="profile">
 							<span>Customizable Profile</span>
-							<span class="price-info">$PRICE/INT</span>
-						</div>
+							<span class="price-info">[$PRICE/INT]</span>
+						</div--->
 					</div>
 				</div>
 				<div class="overview__total">
-					<span>Total (per month/year)</span>
-					<span class="price-info">Price</span>
+					<span>[Total]</span>
+					<span class="price-info">[$PRICE/INT]</span>
 				</div>
 				<div class="content__button-wrapper">
 					<button class="button-back">Go Back</button>

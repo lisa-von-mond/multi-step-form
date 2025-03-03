@@ -45,7 +45,7 @@ nav {
 	border-radius: 10px;
 	z-index: 100;
 	background: var(--neutral-e);
-	padding: 16px 24px;
+	padding: 20px 22px;
 	flex-grow: 1;
 	@media (min-width: 768px) {
 		position: relative;
