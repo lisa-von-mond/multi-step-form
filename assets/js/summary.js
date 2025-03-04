@@ -70,8 +70,10 @@ function fillOverview() {
 
 	// change visibility of extras data in final summary
 	const extrasFormInputs = document.querySelectorAll('.choose-extras__form input')
+	let extrasSelected = false
 	extrasFormInputs.forEach(el => {
 		const isChecked = el.checked
+		if (isChecked === true) {extrasSelected = true}
 		const wrapper = document.querySelector(`[data-slug="${el.getAttribute('value')}"].overview__extra`);
 		const extrasPrice = extrasData.find(x => x.slug === el.getAttribute('value'))[isYearly === true ? 'yearlyPrice' : 'monthlyPrice']
 		if (isChecked) {
@@ -81,6 +83,12 @@ function fillOverview() {
 			wrapper.classList.remove('active')
 		}
 	})
+	const line = document.querySelector('.overview__box hr');
+	if (extrasSelected === false) {
+		line.classList.add('invisible')
+	} else {
+		line.classList.remove('invisible')
+	}
 
 	// total line with final price
 	const summaryEl = document.querySelector('.overview__total span:nth-child(1)')

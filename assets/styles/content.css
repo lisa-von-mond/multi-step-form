@@ -102,7 +102,7 @@ h1 {
 	border-radius: 6px;
 	padding: 16px;
 	@media(min-width: 768px) {
-		padding: 18px 22px 24px 22px;
+		padding: 18px 22px 22px 22px;
 		margin-bottom: 0;
 	}
 }
@@ -141,16 +141,19 @@ h1 {
 }
 
 hr {
-	margin: 14px 0 0 0;
+	margin: 14px 0 12px 0;
 	border: 1px solid var(--neutral-b);
 	@media(min-width: 768px) {
-		margin: 22px 0 14px 0;
+		margin: 22px 0 22px 0;
 	}
+}
+
+hr.invisible {
+	display: none;
 }
 
 .overview__extras {
 	display: flex;
-	margin-top: 12px;
 	flex-direction: column;
 	gap: 14px;
 	@media(min-width: 768px) {
@@ -232,6 +235,7 @@ hr {
 		padding: 0;
 		align-items: end;
 		flex-grow: 1;
+		box-shadow: none;
 	}
 
 	button {
@@ -242,6 +246,7 @@ hr {
 		font-family: inherit;
 		border: none;
 		background: none;
+		transition: all 0.3s;
 		@media (min-width: 768px) {
 			height: 48px;
 			font-size: 16px;
@@ -259,6 +264,18 @@ hr {
 		}
 	}
 
+	.button-next:hover {
+		background: darkblue;
+	}
+
+	#button-confirm.button-next {
+		background: var(--primary-b);
+	}
+
+	#button-confirm.button-next:hover {
+		background: #8383ff;
+	}
+
 	.button-back {
 		color: var(--neutral-a);
 		background: none;
@@ -266,6 +283,10 @@ hr {
 		@media (min-width: 768px) {
 			padding: 12px 0;
 		}
+	}
+
+	.button-back:hover {
+		color: black;
 	}
 }
 
